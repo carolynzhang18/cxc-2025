@@ -11,7 +11,7 @@ df = df[df['bill_total_billed'] > 0]
 sample_fraction = 1
 sampled_df = df.sample(frac=sample_fraction, random_state=1837)
 
-sampled_file_path = 'filtered_day.csv'
+sampled_file_path = 'bills.csv'
 sampled_df.to_csv(sampled_file_path, index=False)
 
 print(f"\nSampled dataset saved to {sampled_file_path}")
